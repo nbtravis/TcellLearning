@@ -8,8 +8,8 @@ using namespace std;
 
 const string SELF_FILE = "./data/self-9mers.txt";
 const vector<string> VIRUS_FILES = {
-  "./data/hepb-9mers.txt",
   "./data/hiv-9mers.txt",
+  "./data/hepb-9mers.txt",
   "./data/hepc-9mers.txt",
   "./data/zika-9mers.txt",
   "./data/vac-9mers.txt",
