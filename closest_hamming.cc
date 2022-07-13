@@ -6,25 +6,20 @@
 
 using namespace std;
 
-const string SELF_FILE = "/Users/iroh/Desktop/code/TcellLearning/data/self-9mers.txt";
+const string SELF_FILE = "./data/self-9mers.txt";
 const vector<string> VIRUS_FILES = {
-  "/Users/iroh/Desktop/code/TcellLearning/data/hcmv-9mers.txt",
-  "/Users/iroh/Desktop/code/TcellLearning/data/hepb-9mers.txt",
-  "/Users/iroh/Desktop/code/TcellLearning/data/hepc-9mers.txt",
-  "/Users/iroh/Desktop/code/TcellLearning/data/hiv-9mers.txt",
-  "/Users/iroh/Desktop/code/TcellLearning/data/vac-9mers.txt",
-  "/Users/iroh/Desktop/code/TcellLearning/data/zika-9mers.txt",
-  "/Users/iroh/Desktop/code/TcellLearning/data/lis-9mers.txt",
-  "/Users/iroh/Desktop/code/TcellLearning/data/mal-9mers.txt"
+  "./data/hepb-9mers.txt",
+  "./data/hiv-9mers.txt",
+  "./data/hepc-9mers.txt",
+  "./data/zika-9mers.txt",
+  "./data/vac-9mers.txt",
+  "./data/hcmv-9mers.txt",
+  "./data/lis-9mers.txt",
+  "./data/mal-9mers.txt"
 };
 
 vector<string> GetPeptidesFromFile(const string& filename) {
     ifstream input_file(filename);
-    if (!input_file.is_open()) {
-        cerr << "Could not open the file - '"
-             << filename << "'" << endl;
-        return {};
-    }
 
     vector<string> peptides;
     string peptide;
